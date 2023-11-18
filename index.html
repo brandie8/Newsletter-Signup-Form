@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+<link rel = "stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+  
+<div class="container">
+  <div class="sign-up-text">
+  <h1>Stay updated!</h1>
+
+ <p> Join 60,000+ product managers receiving monthly<br> updates on:</p>
+<ul class="sign-up-list">
+ <li><img  class="tick" src="./icon-list.svg" alt="a tick">Product discovery and building what matters</li> 
+ <li><img class="tick" src="./icon-list.svg" alt="a tick">Measuring to ensure updates are a success</li> 
+  <li></li><img class="tick" src="./icon-list.svg" alt="a tick">And much more!</li>
+</ul>
+<form class="sign-up-form">
+  <label type="email">Email address</label><br>
+  <input id="email" placeholder="email@company.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Valid email required">
+<span class="error-message" style="display: none">Valid email required</span>
+
+<br>
+ <button type="submit">Subscribe to monthly newsletter</button> 
+</form>
+</div>
+<div class="sign-up-img">
+  <img width="200" src ="./illustration-sign-up-desktop.svg" alt="Newsletter image">
+</div>
+</div>
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+  <div class="success-container hidden">
+    <div class="card success-card">
+      <img src="./icon-success.svg" alt="success tick">
+      <h1>Thanks for subscribing!</h1>
+      <p>
+        A confirmation email has been sent to<br> <span class="submitted-email">ash@loremcompany.com</span> 
+        Please open it and <br>click the button inside to confirm your subscription.<br>
+      </p>
+      <button class="btn dismiss-btn" onclick="dismissMessage()">Dismiss message</button>
+    </div>
+  </div>
+  <!-- Success message end -->
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Brandon Nabwire</a>.
+    </div>
+  </footer>
+  <script src="./index.js"></script>
+</body>
+</html>
